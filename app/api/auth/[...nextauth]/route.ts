@@ -11,7 +11,7 @@ const authOptions: NextAuthOptions = {
         password: { label: "Password", placeholder: "Password" },
       },
       async authorize(credentials, req) {
-        if (!credentials || credentials.email || credentials.password) {
+        if (!credentials || !credentials.email || !credentials.password) {
           return null;
         }
         const user = users.find((user) => user.email === credentials.email);
