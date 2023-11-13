@@ -1,3 +1,16 @@
+### How To Impliment?
+- [x]  Install NextAuth
+- [x]  Register a Catch-All API Handler Endpoint
+- [ ]  Use Any Number Of Providers
+    - [x]  Use Credentials
+- [x]  Try Sign In
+- [x]  Add Secret, Callbacks
+- [x]  Access Via Server / Client Components
+
+
+<hr />
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
