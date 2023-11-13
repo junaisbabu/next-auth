@@ -1,7 +1,8 @@
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "./api/auth/[...nextauth]/route";
+"use client";
 
-export default async function Home() {
-  const data = await getServerSession(authOptions);
+import { useSession } from "next-auth/react";
+
+export default function Home() {
+  const data = useSession();
   return <main>{JSON.stringify(data)}</main>;
 }
